@@ -95,6 +95,9 @@
 
 #define TW_SDEXT_SIZE               "tw_sdext_size"
 #define TW_SWAP_SIZE                "tw_swap_size"
+#define TW_OS2SDDATA_SIZE           "tw_os2sddata_size"
+#define TW_OS2SDSYSTEM_SIZE         "tw_os2sdsystem_size"
+#define TW_OS2SDCACHE_SIZE          "tw_os2sdcache_size"
 #define TW_SDPART_FILE_SYSTEM       "tw_sdpart_file_system"
 #define TW_TIME_ZONE_GUISEL         "tw_time_zone_guisel"
 #define TW_TIME_ZONE_GUIOFFSET      "tw_time_zone_guioffset"
@@ -169,7 +172,7 @@
 //#define MAX_ARCHIVE_SIZE 52428800LLU // 50MB split for testing
 
 #ifndef CUSTOM_LUN_FILE
-#define CUSTOM_LUN_FILE "/sys/devices/platform/usb_mass_storage/lun%d/file"
+#define CUSTOM_LUN_FILE "/sys/class/android_usb/android0/f_mass_storage/lun/file"
 #endif
 
 #ifndef TW_BRIGHTNESS_PATH
